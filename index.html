@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Trainers Circle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+ 
+    <style>
+        
+       /* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 10px;
+  color: #5a5a5a;
+
+}
+
+.lead{
+    color:black;
+    }
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom:-30px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+         h1{
+            color:whitesmoke;
+        }        
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+        .carousel .lead{
+            color:white;
+        }
+
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+  color:orange;
+}
+.marketing .col-lg-4 .p {
+  margin-right: 10px;
+  margin-left: 10px;
+  color:white;
+}
+
+       
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+  
+    
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 500px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+}
+        
+    </style>
+    
+    <body>
+      <div class="navbar navbar-inverse">
+        <div class="container">
+          
+    
+          <div class="navbar-header">
+            <a href="" class="navbar-brand"> The Trainers Circle</a>
+             
+          </div>
+            
+          <div class="collapse navbar-collapse">
+               
+               <ul class="nav navbar-nav">
+                    <li class><a href="index.html">HOME</a></li>
+                   <li><a href="About.html">ABOUT</a></li>
+                   <li><a href="Register.html">REGISTER</a></li>
+                   <li><a href="trainerinfo.html">TRAIN WITH US</a></li>
+                   <li><a href="Equipment.html">EQUIPMENT</a></li>
+                   <li><a href="Brands.html">BRANDS</a></li>
+              </ul>  
+               </div>
+          
+          </div>
+      </div>
+      
+      <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="Images/ufc.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Reach Your Goals</h1>
+              <p class="lead">Train with the Elite trainers in NYC from all types of backgrounds. Specialties ranging from weightloss to muscle building to sport specific training.</p>
+              <a class="btn btn-large btn-primary" href="Register.html">Sign up today</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="Images/personal-trainers1.jpeg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Train With the Best.</h1>
+              <p class="lead">Train at Home or in the Park. The world is your gym. </p>
+              <a class="btn btn-large btn-primary" href="About.html">Learn more</a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="Images/DSC_0057_sm.jpg" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Equipment At Low Prices</h1>
+              <p class="lead">We provide thousands of independent trainers accross the tri-state area with equipment for their businesses. </p>
+              <a class="btn btn-large btn-primary" href="Signin.html">Browse Trainers</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+    <br> 
+        
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row-fluid">
+        <div class="col-md-4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>TRAIN WITH THE BEST</h2>
+          <p>Train with trusted professionals, they are experienced, friendly, background-checked, and insured.</p>
+        </div><!-- /.span4 -->
+        
+          <div class="col-md-4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>FIND ANY COACH</h2>
+          <p>Find your specialized coach. From Certified Strength and Conditioning Coaches to Running coaches, to Baseball and Basketball coaches you can find them here. </p>
+        </div><!-- /.span4 -->
+        
+          <div class="col-md-4">
+          <img class="img-circle" data-src="holder.js/140x140">
+          <h2>100% MONEY-BACK GUARANTEE</h2>
+          <p>If you’re not satisfied with our work, we’ll refund your money. It’s as simple as that.</p>
+        </div><!-- /.span4 -->
+        <div class="col-md-3">
+          <img class="img-circle" data-src="holder.js/140x140">
+          </div>
+          <br>
+            
+    <!-- START THE FEATURETTES -->
+          <div id="train">
+        <div class=featurette-container>
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-6">
+          <h2 class="featurette-heading">Train Anywhere <span class="text-muted">Even with or without a membership.</span></h2>
+          <p class="lead">We Provide our trainers with the best equiment. From home pull up bars, speed ropes, to self myofascial realease equipment like foam rollers.</p>
+        </div>
+        <div class="col-md-6">
+          <img class="img" src="Images/smiling-woman-in-glasses.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+              </div>
+              
+              
+              
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Personalized <span class="text-muted">See for yourself.</span></h2>
+          <p class="lead">Our approach is different. We recommend trainers based on you. Your goals. Your schedule. Your location. Your lifestyle. After all, this is personal training. </p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="Images/trainers.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Find the perfect trainer <span class="text-muted">based on your goals, your lifestyle and your body.</span></h2>
+          <p class="lead">Select from thousands of trainers from hundreds of backgrounds and specialties. Work with trainers with weightloss specialties to sport specific trainers to get you ready for your sport and reach your goals.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="Images/core.jpg" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+          </div>
+    <script src="http://code.jquery.com/jquery.js">
+       
+     $( "#train" ).scroll(function() {
+  $( "#book" ).fadeIn( "slow", function() {
+    // Animation complete
+  });
+});
+    
+          </script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
